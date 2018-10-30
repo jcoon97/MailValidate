@@ -9,7 +9,7 @@ Mailgun Validator is an extension of Mailgun's official [validator-demo](https:/
 
 Once you have finished the steps above, you may now call the *validateEmail* function.
 
-    ```js
+```js
 $("input[name=email]").validateEmail({
 	apiKey: "[Insert your API key here]",
 	onSuccess: function(data) {
@@ -23,7 +23,7 @@ $("input[name=email]").validateEmail({
 
 An example of the JSON output:
 
-    ```json
+```json
 {
   "address": "john.smith@google.com",
   "did_you_mean": null,
@@ -43,7 +43,7 @@ An example of the JSON output:
 # Customizing Messages
 There are a few pre-defined error messages, such as if an email is too long (exceeds 512 characters, does not include a(n) *@* character, etc.) that you may edit if you wish. When passing in the options array, you may also define a *messages* section with the following:
 
-    ```json
+```json
 ... apiKey ...
 messages: {
 	max512: "Email address may not exceed 512 characters.",
@@ -54,5 +54,5 @@ messages: {
 ```
 
 # More Information
-    [Official Mailgun jQuery Plugin](https://github.com/mailgun/validator-demo)
-                                         [Mailgun Email Verification API Documentation](https://documentation.mailgun.com/en/latest/api-email-validation.html)
+[Official Mailgun jQuery Plugin](https://github.com/mailgun/validator-demo)
+[Mailgun Email Verification API Documentation](https://documentation.mailgun.com/en/latest/api-email-validation.html)
